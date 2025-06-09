@@ -1,0 +1,29 @@
+#page-header {
+    background-image: url(../img/banner/productList/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px;
+    font-weight: 700;
+}
+
+#page-header h2 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+#page-header p {
+    font-size: 24px;
+    color: #fff;
+}
+
+#page-header p span {
+    color: #088178;
+}
+

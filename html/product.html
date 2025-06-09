@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/login.css" />
+  <link rel="stylesheet" href="../css/productList.css" />
+  <link rel="stylesheet" href="../css/product.css" />
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
@@ -18,18 +20,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
   <script src="../js/login.js" defer></script>
   <script src="../js/script.js" defer></script>
-  <script src="../js/topSellers.js" defer></script>
+  <script src="../js/product.js" defer></script>
 </head>
 
 <body>
   <!-- header navbar -->
   <header>
     <a href="index.html"><img src="../img/NavbarLogo.png" class="logo" alt="logo" /></a>
-
     <div>
       <ul id="navbar">
-        <li><a class="active" href="index.html">Inicio</a></li>
-        <li><a href="productList.html">Productos</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a class="active" href="productList.html">Productos</a></li>
         <li><a href="aboutUs.html">Acerca de nosotros</a></li>
         <li><a href="contact.html">Contacto</a></li>
         <li><a href="blog.html">Blog</a></li>
@@ -172,330 +173,33 @@
     </div>
   </div>
   <!-- fin login -->
-  <!-- hero de arnolito -->
-  <section id="hero">
-    <h1>Aprovecha nuestras ofertas!</h1>
-    <h2>"El que no se pincha no se hincha"</h2>
-    <h4>-Arnold Scharzenegger</h4>
+  <!-- productos con detalles -->
+  <section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+      <img src="" id="content-img"  id="Mainimg" />
 
-    <p>Comenza hoy tu primer ciclo</p>
 
-    <a href="productList.html"> <button>CLICK AQUI</button> </a>
-  </section>
+    </div>
 
-  <!-- carousel de cyber monday -->
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../img/cyberMonday/cyber1.jpg" class="d-block w-100" alt="..." />
-      </div>
-      <div class="carousel-item">
-        <img src="../img/cyberMonday/cyber3.jpg" class="d-block w-100" alt="..." />
-      </div>
-      <div class="carousel-item">
-        <img src="../img/cyberMonday/cyber2.jpg" class="d-block w-100" alt="..." />
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+    <div class="single-pro-details">
 
-  <!-- nuestros beneficios -->
-  <section id="features" class="section-p1">
-    <div class="fe-box">
-      <img src="../img/features/f1.png" alt="" />
-      <h6>Envios gratis</h6>
-    </div>
-    <div class="fe-box">
-      <img src="../img/features/f2.png" alt="" />
-      <h6>Pedidos Online</h6>
-    </div>
-    <div class="fe-box">
-      <img src="../img/features/f3.png" alt="" />
-      <h6>Ahorra dinero</h6>
-    </div>
-    <div class="fe-box">
-      <img src="../img/features/f4.png" alt="" />
-      <h6>Promociones</h6>
-    </div>
-    <div class="fe-box">
-      <img src="../img/features/f5.png" alt="" />
-      <h6>Crece en equipo</h6>
-    </div>
-    <div class="fe-box">
-      <img src="../img/features/f6.png" alt="" />
-      <h6>Servicio Tecnico</h6>
+      <h4 id="content-name">Dermaglós Solar, Gel refrescante POST SOLAR 50g</h4>
+      <h2 id="content-price">$1988.00</h2>
+      <select disabled>
+        <option>1 cuota, sin interes</option>
+        <option>3 cuotas, sin interes</option>
+        <option>6 cuotas, con un 15%</option>
+        <option>12 cuotas, con un 30%</option>
+      </select>
+      <input type="number" value="1" id="input-cantidad" />
+      <button class="normal" id="btn-add-cart">Agregar al carrito</button>
+      <h4>Detalles del producto</h4>
+      <span id="content-description"></span>
     </div>
   </section>
 
-  <!-- cards de productos 1 -->
+  <!-- cards de productos -->
 
-  <section id="product1" class="section-p1">
-    <h2>Los más vendidos</h2>
-    <p>Complementa tu entrenamiento con suplementos de calidad.</p>
-
-    <div class="prod-container" id="prod-container">
-      
-    </div>
-  </section>
-
-  <!-- carousel de promos bancarias -->
-  <section id="product1" class="section-p1">
-    <h2>Aprovecha nuestras promos bancarias</h2>
-    <p>Hasta 12 cuotas sin interes con los bancos adheridos</p>
-    <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
-      <div class="carousel-inner w-100">
-        <div class="carousel-item active">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <img class="img-fluid" src="../img/promoBancos/promo1.png" />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <img class="img-fluid" src="../img/promoBancos/promo2.png" />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <img class="img-fluid" src="../img/promoBancos/promo3.png" />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <img class="img-fluid" src="../img/promoBancos/promo4.png" />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <img class="img-fluid" src="../img/promoBancos/promo5.png" />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <img class="img-fluid" src="../img/promoBancos/promo6.png" />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <img class="img-fluid" src="../img/promoBancos/promo7.png" />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <img class="img-fluid" src="../img/promoBancos/promo8.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-
-  <!-- banner cybermonday -->
-
-  <a href="productList.html">
-    <section id="bannerCyberMonday" class="section-m1"></section>
-  </a>
-
-  <!-- banner dermaglos -->
-  <section id="banner" class="section-m1">
-    <h4>Afronta el verano con Dermaglos</h4>
-    <h2>Hasta un <span>70% OFF</span> en protectores</h2>
-
-    <a href="productList.html"> <button class="normal">VER MAS</button> </a>
-  </section>
-
-  <!-- cards de productos 2 DERMAGLOS-->
-  <section id="product1" class="section-p1">
-    <h2>Recien llegados</h2>
-    <p>Se de los primeros en probar la nueva linea de Dermaglos</p>
-
-    <div class="prod-container">
-      <!-- Card 1 -->
-      <div class="prod">
-        <a href="../html/error404.html" class="img-link">
-          <img src="../img/products/3skincare/1.png" alt="Producto" class="imgProd" />
-        </a>
-        <div class="desc">
-          <span>Dermaglós</span>
-          <h5>Post Solar Gel Refrescante 150ml</h5>
-          <h4>$11.740</h4>
-        </div>
-        <div class="icon-container">
-          <a href="#" class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-          <a href="#" class="favorite-icon">
-            <i class="fas fa-heart"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="prod">
-        <a href="../html/error404.html" class="img-link">
-          <img src="../img/products/3skincare/2.png" alt="Producto" class="imgProd" />
-        </a>
-        <div class="desc">
-          <span>Dermaglós</span>
-          <h5>Protector Solar Familiar Fps 50 380ml</h5>
-          <h4>$23.740</h4>
-        </div>
-        <div class="icon-container">
-          <a href="#" class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-          <a href="#" class="favorite-icon">
-            <i class="fas fa-heart"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="prod">
-        <a href="../html/error404.html" class="img-link">
-          <img src="../img/products/3skincare/3.png" alt="Producto" class="imgProd" />
-        </a>
-        <div class="desc">
-          <span>Dermaglós</span>
-          <h5>Protector Solar Fps 50 Spray 170ml</h5>
-          <h4>$20.257</h4>
-        </div>
-        <div class="icon-container">
-          <a href="#" class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-          <a href="#" class="favorite-icon">
-            <i class="fas fa-heart"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="prod">
-        <a href="../html/error404.html" class="img-link">
-          <img src="../img/products/3skincare/4.png" alt="Producto" class="imgProd" />
-        </a>
-        <div class="desc">
-          <span>Dermaglós</span>
-          <h5>Protector Solar Fps 65 Crema 90g</h5>
-          <h4>$16.450</h4>
-        </div>
-        <div class="icon-container">
-          <a href="#" class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-          <a href="#" class="favorite-icon">
-            <i class="fas fa-heart"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="prod">
-        <a href="../html/error404.html" class="img-link">
-          <img src="../img/products/3skincare/5.png" alt="Producto" class="imgProd" />
-        </a>
-        <div class="desc">
-          <span>Dermaglós</span>
-          <h5>Protector Solar Bebés Fps 65 120g</h5>
-          <h4>$14.829</h4>
-        </div>
-        <div class="icon-container">
-          <a href="#" class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-          <a href="#" class="favorite-icon">
-            <i class="fas fa-heart"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="prod">
-        <a href="../html/error404.html" class="img-link">
-          <img src="../img/products/3skincare/6.png" alt="Producto" class="imgProd" />
-        </a>
-        <div class="desc">
-          <span>Dermaglós</span>
-          <h5>Protector Crema Compacta Color Fps 50 10g</h5>
-          <h4>$18.717</h4>
-        </div>
-        <div class="icon-container">
-          <a href="#" class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-          <a href="#" class="favorite-icon">
-            <i class="fas fa-heart"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- mini banner boxes de loreal y givenchy -->
-  <section id="sm-banner" class="section-p1">
-    <div class="banner-box">
-      <h4>L'oreal Paris presenta</h4>
-      <h2>Nueva linea de Elvive</h2>
-      <span>ahora con acido hialuronico</span>
-      <a href="productList.html"><button class="white">VER MAS</button></a>
-    </div>
-    <div class="banner-box2">
-      <h4>Nuevos ingresos de Givenchy</h4>
-      <h2>L’Interdit</h2>
-      <span>Mas allá de lo prohibido</span>
-      <a href="productList.html"><button class="white">VER MAS</button></a>
-    </div>
-  </section>
-
-  <!-- mini banners tres en fila -->
-  <section id="banner3">
-    <div class="banner-box">
-      <h2>Nuevos entrada de Blog</h2>
-
-      <a href="blog.html"> <button class="white">LEER MAS</button> </a>
-    </div>
-    <div class="banner-box2">
-      <h2>Nueva entrada de Blog</h2>
-
-      <a href="blog.html"> <button class="white">LEER MAS</button> </a>
-    </div>
-    <div class="banner-box3">
-      <h2>Nuevos entrada de Blog</h2>
-      <a href="blog.html"> <button class="white">LEER MAS</button> </a>
-    </div>
-  </section>
 
   <!-- newsletter -->
   <section id="newsletter" class="section-p1 section-m1">
@@ -513,6 +217,7 @@
   </section>
 
   <!-- footer -->
+
   <footer class="section-p1">
     <div class="col">
       <img src="../img/NavbarLogo.png" class="logoFooter" />
@@ -590,6 +295,7 @@
       <p>© 2024 Calcagni Farmacias. Todos los derechos reservados.</p>
     </section>
   </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calcagni Farmacia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="stylesheet" href="../css/account.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+  <script src="../js/login.js" defer></script>
+  <script src="../js/script.js" defer></script>
+  <script src="../js/account.js" defer></script>
+</head>
+
+<body>
+  <!-- header navbar -->
+  <header>
+    <a href="index.html"><img src="../img/NavbarLogo.png" class="logo" alt="logo" /></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productList.html">Productos</a></li>
+        <li><a href="aboutUs.html">Acerca de nosotros</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li class="active" id="btn-account-status">Login</li>
+        <li id="btn-cart">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- OffCanvas MAIN -->
+  <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header m-3 d-flex justify-content-between">
+      <h5 class="offcanvas-title" id="title-login">INICIAR SESION</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+        id="btn-close"></button>
+      <button type="button" class="btn btn-light" id="btn-back">
+        <i class="fa-solid fa-backward"></i> ATRAS
+      </button>
+    </div>
+    <!-- OffCanvas seccion LOGIN -->
+    <div class="offcanvas-body" id="login-offcanvas">
+      <div class="d-flex justify-content-around">
+        <h5>CON TU E-MAIL</h5>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <form action="" class="form__group" id="btn-login">
+          <div class="form__group field">
+            <input type="email" class="form__field" placeholder="Correo Electronico" name="name" id="input-login-email"
+              required autocomplete="email" />
+            <label for="input-login-email" class="form__label">Correo Electronico</label>
+          </div>
+          <div class="form__group field">
+            <input type="password" class="form__field" placeholder="Contraseña" name="name" id="input-login-password"
+              minlength="6" required autocomplete="current-password" />
+            <label for="input-login-password" class="form__label">Contraseña</label>
+          </div>
+          <div class="mt-4 mb-2" id="error-text-id">
+            <b class="error-text">El usuario o contraseña son incorrectos</b>
+          </div>
+          <div class="d-flex justify-content-between m-3">
+            <button type="submit" class="btn btn-success">Ingresar</button>
+            <button type="button" class="btn btn-light" id="btn-forgot-password">
+              Olvidé mi contraseña
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="container text-center mt-5">
+        <p>¿No tienes cuenta?</p>
+        <button class="btn btn-dark mb-2 btn-new-account" id="btn-register">
+          Crear nueva cuenta
+        </button>
+        <br />
+        <a href="#">
+          <div class="g-sign-in-button">
+            <div class="content-wrapper">
+              <div class="logo-wrapper">
+                <img src="https://developers.google.com/identity/images/g-logo.png" />
+              </div>
+              <span class="text-container">
+                <span>Inicia Sesion con Google</span>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- OffCanvas seccion Contraseña olvidada -->
+    <div class="offcanvas-body" id="forgotPass-offcanvas">
+      <div class="d-flex justify-content-around">
+        <h5>Ingresa el E-mail con el cual te registraste</h5>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <div class="form__group field">
+          <input type="email" class="form__field" placeholder="Correo Electronico" name="name"
+            id="input-forgotPass-email" required autocomplete="email" />
+          <label for="input-forgotPass-email" class="form__label">Correo Electronico</label>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between m-3">
+        <button type="button" class="btn btn-success">Recuperar</button>
+      </div>
+    </div>
+
+    <!-- OffCanvas seccion REGISTRO -->
+    <div class="offcanvas-body" id="register-offcanvas">
+      <div class="d-flex justify-content-around">
+        <h5>Regístrate con tu e-mail</h5>
+      </div>
+      <form action="" id="btn-register-success">
+        <div class="d-flex justify-content-between">
+          <div class="form__group field mx-3 form-register">
+            <input type="text" class="form__field" placeholder="Nombre" name="name" id="input-register-name" required
+              autocomplete="given-name" />
+            <label for="input-register-name" class="form__label">Nombre</label>
+          </div>
+          <div class="form__group field mx-3 form-register">
+            <input type="text" class="form__field" placeholder="Apellido" name="name" id="input-register-lastName"
+              required autocomplete="family-name" />
+            <label for="input-register-lastName" class="form__label">Apellido</label>
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <div class="form__group field">
+            <input type="email" class="form__field" placeholder="Correo Electronico" name="name"
+              id="input-register-email" required autocomplete="email" />
+            <label for="input-register-email" class="form__label">Correo Electronico</label>
+          </div>
+          <div class="form__group field">
+            <input type="password" class="form__field" placeholder="Contraseña" name="name" id="input-register-password"
+              minlength="6" required autocomplete="new-password" />
+            <label for="input-register-password" class="form__label">Contraseña</label>
+          </div>
+        </div>
+        <div class="mt-4 mb-2 mx-3" id="error-text-id-register">
+          <b class="error-text">El email ingresado ya esta en uso</b>
+        </div>
+        <div class="d-flex justify-content-between m-3">
+          <button type="submit" class="btn btn-success">Crear cuenta</button>
+        </div>
+      </form>
+      <div class="container text-center mt-5">
+        <a href="#">
+          <div class="g-sign-in-button">
+            <div class="content-wrapper">
+              <div class="logo-wrapper">
+                <img src="https://developers.google.com/identity/images/g-logo.png" />
+              </div>
+              <span class="text-container">
+                <span>Crea tu cuenta con Google</span>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- fin login -->
+
+  <main>
+    <div class="d-flex justify-content-center mt-3">
+      <aside class="account-aside">
+        <div class="d-flex flex-column m-3">
+          <button type="button" class="btn text-start btn-myaccount" id="account-btn-myaccount">
+            <i class="fa-solid fa-user mx-4 py-3"></i>Mi cuenta
+          </button>
+          <button type="button" class="btn text-start btn-myaccount" id="account-btn-myshops">
+            <i class="fa-solid fa-bag-shopping mx-4 py-3"></i>Mis compras
+          </button>
+          <button type="button" class="btn text-start btn-myaccount" id="account-btn-myfav">
+            <i class="fa-solid fa-heart mx-4 py-3"></i>Mis favoritos
+          </button>
+          <button type="button" class="btn text-start btn-myaccount" id="account-btn-exit">
+            <i class="fa-solid fa-user-slash mx-4 py-3"></i>Salir
+          </button>
+        </div>
+      </aside>
+      <section class="account-section">
+        <!-- myaccount -->
+        <div id="myaccount-div">
+          <div class="title-account-section mx-3">
+            <h3 class="my-4">Mi cuenta</h3>
+          </div>
+          <div class="col-12 mt-3 p-3">
+            <div class="account-box-style p-3">
+              <div class="title-account-section mx-3">
+                <h6 class="my-2">Datos de contacto</h6>
+              </div>
+              <form action="" class="form__group px-3" id="form-contact-data">
+                <div class="d-flex">
+                  <div class="form__group__account field">
+                    <input type="text" class="form__field" placeholder="Nombre" id="account-input-name" required
+                      autocomplete="given-name" />
+                    <label for="account-input-name" class="form__label__account">Nombre</label>
+                  </div>
+                  <div class="form__group__account field mx-5">
+                    <input type="text" class="form__field" placeholder="Apellido" id="account-input-lastname" required
+                      autocomplete="family-name" />
+                    <label for="account-input-lastname" class="form__label__account">Apellido</label>
+                  </div>
+                  <div class="form__group__account field">
+                    <input type="number" class="form__field" placeholder="Nro. documento" id="account-input-dni"
+                      required autocomplete="dni" />
+                    <label for="account-input-dni" class="form__label__account">Nro. documento</label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="form__group__account field">
+                    <input type="email" class="form__field" placeholder="Correo Electronico" id="account-input-email"
+                      required autocomplete="email" />
+                    <label for="account-input-email" class="form__label__account">Email de contacto</label>
+                  </div>
+                  <div class="form__group__account field mx-5">
+                    <input type="tel" class="form__field" placeholder="Telefono" id="account-input-phone" minlength="6"
+                      required autocomplete="tel" />
+                    <label for="account-input-phone" class="form__label__account">Telefono</label>
+                  </div>
+                </div>
+                <div class="d-flex m-1 justify-content-end">
+                  <button type="submit" class="btn btn-account-success mt-4">
+                    Guardar cambios
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-6 account-box-first p-3">
+                <div class="account-box-style p-3 account-box-info">
+                  <div class="title-account-section mx-3">
+                    <h6 class="my-2">Acceso</h6>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <b class="px-3 pt-4 h6">Email</b>
+                    <b class="px-3 h6" id="access-email"></b>
+                    <b class="px-3 pt-4 h6">Acceso con google</b>
+                    <b class="px-3 h6">No</b>
+                    <b class="px-3 pt-4 h6">Acceso con Facebook</b>
+                    <b class="px-3 h6">No</b>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 account-box-second p-3">
+                <div class="account-box-style p-3">
+                  <div class="title-account-section mx-3">
+                    <h6 class="my-2">Cambio de Contraseña</h6>
+                  </div>
+                  <form action="" class="form__group px-3" id="form-newpassword">
+                    <div class="form__group field">
+                      <input type="password" class="form__field" placeholder="Contraseña actual"
+                        id="account-input-password" required autocomplete="current-password" />
+                      <label for="account-input-password" class="form__label__account">Contraseña actual</label>
+                    </div>
+                    <div class="form__group field mt-2">
+                      <input type="password" class="form__field" placeholder="Nueva contraseña"
+                        id="account-input-newpassword" minlength="6" required autocomplete="new-password" />
+                      <label for="account-input-newpassword" class="form__label__account">Nueva contraseña</label>
+                    </div>
+                    <div class="form__group field mt-2">
+                      <input type="password" class="form__field" placeholder="Repetir"
+                        id="account-input-newpassword-repeat" minlength="6" required autocomplete="new-password" />
+                      <label for="account-input-newpassword-repeat" class="form__label__account">Repetir</label>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button type="submit" class="btn btn-account-success mt-4">
+                        Guardar cambios
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- my shops -->
+        <div id="myshops-div">
+          <div class="title-account-section mx-3">
+            <h3 class="my-4">Mis Compras</h3>
+          </div>
+          <div class="d-flex flex-column align-items-center col-12 mt-3 p-3" id="tickets-empty">
+            <i class="fa-solid fa-face-frown fa-2xl mt-5" style="color: #696969"></i>
+            <h4 class="mt-4">No realizaste ninguna compra</h4>
+            <p>Agregá productos a tu carrito y realizá tu primera compra!</p>
+            <a href="./index.html" class="btn btn-dark mb-2 btn-new-account btn-go-shop">Ir a la Tienda</a>
+          </div>
+          <div class="mt-4" id="tickets-div" style="width: 100%; min-height: 100%">
+            
+          </div>
+          
+        </div>
+        <!-- fin my shops -->
+        <!-- my favs -->
+        <div id="myfavs-div" class="mb-5">
+          <div class="title-account-section mx-3">
+            <h3 class="my-4">Mis Favoritos</h3>
+          </div>
+          <div class="d-flex flex-column align-items-center col-12 mt-3 p-3 favs-container-empty"
+            id="favs-container-empty">
+            <i class="fa-sharp fa-solid fa-heart fa-2xl mt-5" style="color: #696969"></i>
+            <h4 class="mt-4">No tienes nada en favoritos</h4>
+            <p>Para comenzar a añadir puedes...</p>
+            <a href="./index.html" class="btn btn-dark mb-2 btn-new-account btn-go-shop">Ir a la Tienda</a>
+          </div>
+          <div class="prod-container mt-4" id="favs-container" style="width: 100%; min-height: 100%">
+
+            <div class="d-flex">
+            <div>
+              <img class="img-ticket"
+                src="https://thumbs.dreamstime.com/b/dibujo-de-icono-caricatura-caja-concepto-producto-o-maquinaria-listo-para-ser-entregado-al-cliente-simple-157425701.jpg">
+            </div>
+            <div class="d-flex flex-column">
+              <h3>RECIBO DE COMPRA</h3>
+              <div class="d-flex">
+                <h4>Nombre:</h4>
+                <h4 class="mx-5">Apellido:</h4>
+              </div>
+              <H4>DNI Cliente:</H4>
+              <H4>Direccion:</H4>
+              <H4>Precio final:</H4>
+              <H4>Comprado con tarjeta terminado en:</H4>
+            </div>
+            <div>
+              <div>
+                <h3>PRODUCTOS COMPRADOS</h3>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <h3 id="delivery-proccess">PENDIENTE</h3>
+            </div>
+          </div>
+
+          </div>
+        </div>
+    </div>
+    <!-- fin my favs -->
+    </section>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="section-p1">
+    <div class="col">
+      <img src="../img/NavbarLogo.png" class="logoFooter" />
+      <h4>Contacto</h4>
+      <p>
+        <strong>Dirección: </strong> 25 de Mayo 969, San Miguel de Tucuman,
+        Tucuman
+      </p>
+      <p><strong>Teléfono de contacto: </strong> +54 9 381 364 3969</p>
+      <p>
+        <strong>Horario de atención: </strong> Lunes a viernes de 10:00 am. a
+        20:00 pm.
+      </p>
+      <div class="col">
+        <h4>Contactanos</h4>
+        <div class="follow">
+          <div class="icon">
+            <a href="https://x.com/CalcagniFarmaG4" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="https://www.instagram.com/calcagnifarmacias/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/+543813643969?text=mensaje" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i></a>
+
+            <a href="https://www.facebook.com/esum2607" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>Acerca De</h4>
+      <a href="aboutUs.html">Acerca de nosotros</a>
+      <a href="aboutUs.html">Información sobre envíos</a>
+      <a href="https://www.argentina.gob.ar/noticias/politicas-de-privacidad-la-aaip-analizo-mas-de-100-sitios-web-de-argentina"
+        target="_blank">Políticas de privacidad</a>
+      <a href="https://www.argentina.gob.ar/justicia/convosenlaweb/situaciones/porque-es-importante-leer-los-terminos-y-condiciones-de-una-pagina-en-internet-o-aplicacion"
+        target="_blank">Términos y condiciones</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+
+    <div class="col">
+      <h4>Mi cuenta</h4>
+      <a href="account.html" target="_blank">Ingresar</a>
+      <a href="cart.html">Ver mi carrito</a>
+      <a href="account.html" target="_blank">Mis favoritos</a>
+      <a href="https://www.oca.com.ar/Seguimiento/BuscarEnvio/paquetes" target="_blank">Seguimiento de envíos</a>
+      <a href="https://www.argentina.gob.ar/jefatura/innovacion-publica/administrativa/mesas-de-ayuda"
+        target="_blank">Ayuda</a>
+    </div>
+
+    <div class="colInstall">
+      <h4>Instalar nuestra aplicación</h4>
+      <p>Descarga nuestra app desde Google Play</p>
+      <div class="row">
+        <a href="https://www.apple.com/la/app-store/" target="_blank" rel="noopener noreferrer">
+          <img src="../img//pay/app.jpg" alt="Google Play" />
+        </a>
+
+        <a href="https://play.google.com/store/games?hl=es_419&pli=1" target="_blank" rel="noopener noreferrer">
+          <img src="../img/pay/play.jpg" alt="App Store" />
+        </a>
+      </div>
+      <p>Métodos de pago</p>
+      <img src="../img/pay/pay.png" alt="Métodos de pago" />
+    </div>
+
+    <section class="copyright">
+      <p>© 2024 Calcagni Farmacias. Todos los derechos reservados.</p>
+    </section>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,777 @@
+{
+  "suplementos": [
+    {
+      "id": "SUP1",
+      "tipo": "suplementos",
+      "marca": "Star Nutrition",
+      "nombre": "Creatina Monohydrate",
+      "tamanio": "200g",
+      "imagen": "../img/products/1suplementos/sup1.png",
+      "precio": 25806,
+      "descripcion": "Aumenta el rendimiento en entrenamientos de alta intensidad."
+    },
+    {
+      "id": "SUP2",
+      "tipo": "suplementos",
+      "marca": "Star Nutrition",
+      "nombre": "Iron Multivitamin Pack",
+      "tamanio": "383g",
+      "imagen": "../img/products/1suplementos/sup2.png",
+      "precio": 64839,
+      "descripcion": "Complejo multivitamínico para energía y vitalidad diaria."
+    },
+    {
+      "id": "SUP3",
+      "tipo": "suplementos",
+      "marca": "Star Nutrition",
+      "nombre": "Creatina Monohydrate Doy Pack",
+      "tamanio": "300g",
+      "imagen": "../img/products/1suplementos/sup3.png",
+      "precio": 21408,
+      "descripcion": "Formato práctico para mejorar fuerza y recuperación."
+    },
+    {
+      "id": "SUP4",
+      "tipo": "suplementos",
+      "marca": "Star Nutrition",
+      "nombre": "Whey Protein Vainilla + Creatina Star Nutrition COMBO",
+      "tamanio": "500g",
+      "imagen": "../img/products/1suplementos/sup4.png",
+      "precio": 58949,
+      "descripcion": "Combina proteína y creatina para el desarrollo muscular."
+    },
+    {
+      "id": "SUP5",
+      "tipo": "suplementos",
+      "marca": "Star Nutrition",
+      "nombre": "Citrato De Magnesio 60 capsulas",
+      "tamanio": "500g",
+      "imagen": "../img/products/1suplementos/sup5.png",
+      "precio": 12724,
+      "descripcion": "Mejora la función muscular y reduce la fatiga."
+    },
+    {
+      "id": "SUP6",
+      "tipo": "suplementos",
+      "marca": "Star Nutrition",
+      "nombre": "Mutanmass Coockies & Cream",
+      "tamanio": "5kg",
+      "imagen": "../img/products/1suplementos/sup6.png",
+      "precio": 12724,
+      "descripcion": "Ganador de peso con sabor delicioso para volumen extremo."
+    },
+    {
+      "id": "SUP7",
+      "tipo": "suplementos",
+      "marca": "ENA",
+      "nombre": "Protein Bar Chocolate Brownie Caja",
+      "tamanio": "16u",
+      "imagen": "../img/products/1suplementos/sup7.png",
+      "precio": 30000,
+      "descripcion": "Barritas altas en proteínas ideales como snack post-entreno."
+    },
+    {
+      "id": "SUP8",
+      "tipo": "suplementos",
+      "marca": "ENA",
+      "nombre": "Truemade Whey Protein Rich Chocolate",
+      "tamanio": "453g",
+      "imagen": "../img/products/1suplementos/sup8.png",
+      "precio": 22800,
+      "descripcion": "Proteína de alta calidad con sabor intenso a chocolate."
+    },
+    {
+      "id": "SUP9",
+      "tipo": "suplementos",
+      "marca": "ENA",
+      "nombre": "Truemade Whey Protein Vanilla Ice Cream",
+      "tamanio": "453g",
+      "imagen": "../img/products/1suplementos/sup9.png",
+      "precio": 20799,
+      "descripcion": "Proteína de suero con un sabor dulce y cremoso."
+    },
+    {
+      "id": "S10A",
+      "tipo": "suplementos",
+      "marca": "ENA",
+      "nombre": "Truemade Whey Protein Cookies & Cream",
+      "tamanio": "453g",
+      "imagen": "../img/products/1suplementos/sup10.png",
+      "precio": 17049,
+      "descripcion": "Textura cremosa y proteínas esenciales para tus músculos."
+    },
+    {
+      "id": "S11B",
+      "tipo": "suplementos",
+      "marca": "ENA",
+      "nombre": "Carbo Energy Blueberry",
+      "tamanio": "546g",
+      "imagen": "../img/products/1suplementos/sup11.png",
+      "precio": 85799,
+      "descripcion": "Carbohidratos rápidos para energía instantánea y sabor a arándano."
+    },
+    {
+      "id": "S12C",
+      "tipo": "suplementos",
+      "marca": "ENA",
+      "nombre": "Amino 4500 150u",
+      "tamanio": "150u",
+      "imagen": "../img/products/1suplementos/sup12.png",
+      "precio": 27800,
+      "descripcion": "Aminoácidos esenciales para recuperación y soporte muscular."
+    }
+  ],
+  "shampoos": [
+    {
+      "id": "SH01",
+      "tipo": "shampoos",
+      "marca": "L´Oréal Paris Elvive",
+      "nombre": "Shampoo Color Vive",
+      "tamanio": "400ml",
+      "imagen": "../img/products/2shampoo/sh1.png",
+      "precio": 6547,
+      "descripcion": "Protege el color y aporta brillo al cabello teñido."
+    },
+    {
+      "id": "SH02",
+      "tipo": "shampoos",
+      "marca": "L´Oréal Paris Elvive",
+      "nombre": "Shampoo Glycolic Gloss",
+      "tamanio": "400ml",
+      "imagen": "../img/products/2shampoo/sh2.png",
+      "precio": 7564.88,
+      "descripcion": "Proporciona un brillo duradero y suavidad al cabello."
+    },
+    {
+      "id": "SH03",
+      "tipo": "shampoos",
+      "marca": "L´Oréal Paris Elvive",
+      "nombre": "Shampoo Dream Long Liss",
+      "tamanio": "400ml",
+      "imagen": "../img/products/2shampoo/sh3.png",
+      "precio": 7564.88,
+      "descripcion": "Alisa y protege las puntas del cabello largo."
+    },
+    {
+      "id": "SH04",
+      "tipo": "shampoos",
+      "marca": "L´Oréal Paris Elvive",
+      "nombre": "Shampoo Arcilla Purificante",
+      "tamanio": "400ml",
+      "imagen": "../img/products/2shampoo/sh4.png",
+      "precio": 6547,
+      "descripcion": "Controla la grasa y deja el cabello fresco y ligero."
+    },
+    {
+      "id": "SH05",
+      "tipo": "shampoos",
+      "marca": "L´Oréal Paris Elvive",
+      "nombre": "Shampoo Óleo Extraordinario",
+      "tamanio": "400ml",
+      "imagen": "../img/products/2shampoo/sh5.png",
+      "precio": 6547,
+      "descripcion": "Nutre profundamente para un cabello suave y brillante."
+    },
+    {
+      "id": "SH06",
+      "tipo": "shampoos",
+      "marca": "L´Oréal Paris Elvive",
+      "nombre": "Shampoo Dream Long",
+      "tamanio": "400ml",
+      "imagen": "../img/products/2shampoo/sh6.png",
+      "precio": 7564.88,
+      "descripcion": "Repara y fortalece el cabello largo y dañado."
+    },
+    {
+      "id": "SH07",
+      "tipo": "shampoos",
+      "marca": "TRESemmé",
+      "nombre": "Shampoo Keratina Antifrizz",
+      "tamanio": "500ml",
+      "imagen": "../img/products/2shampoo/sh7.png",
+      "precio": 3973.53,
+      "descripcion": "Controla el frizz dejando el cabello suave y manejable."
+    },
+    {
+      "id": "SH08",
+      "tipo": "shampoos",
+      "marca": "TRESemmé",
+      "nombre": "Shampoo Cauterización Reparadora",
+      "tamanio": "500ml",
+      "imagen": "../img/products/2shampoo/sh8.png",
+      "precio": 4013.26,
+      "descripcion": "Repara el daño capilar y restaura la vitalidad del cabello."
+    },
+    {
+      "id": "SH09",
+      "tipo": "shampoos",
+      "marca": "TRESemmé",
+      "nombre": "Shampoo Liso Efecto Botox",
+      "tamanio": "500ml",
+      "imagen": "../img/products/2shampoo/sh9.png",
+      "precio": 3973.53,
+      "descripcion": "Alisa y revitaliza el cabello dejándolo sedoso."
+    },
+    {
+      "id": "SH10",
+      "tipo": "shampoos",
+      "marca": "TRESemmé",
+      "nombre": "Shampoo Ondas Boho",
+      "tamanio": "500ml",
+      "imagen": "../img/products/2shampoo/sh10.png",
+      "precio": 44499,
+      "descripcion": "Define ondas naturales con movimiento y textura."
+    },
+    {
+      "id": "SH11",
+      "tipo": "shampoos",
+      "marca": "TRESemmé",
+      "nombre": "Shampoo Matizador Ultravioleta",
+      "tamanio": "500ml",
+      "imagen": "../img/products/2shampoo/sh11.png",
+      "precio": 44499,
+      "descripcion": "Neutraliza tonos amarillos para cabellos rubios o grises."
+    },
+    {
+      "id": "SH12",
+      "tipo": "shampoos",
+      "marca": "TRESemmé",
+      "nombre": "Shampoo Détox Capilar",
+      "tamanio": "500ml",
+      "imagen": "../img/products/2shampoo/sh11.png",
+      "precio": 44499,
+      "descripcion": "Elimina impurezas y toxinas para un cabello fresco y limpio."
+    }
+  ],
+  "cremas": [
+    {
+      "id": "CR01",
+      "tipo": "cremas",
+      "marca": "Dermaglós",
+      "nombre": "Post Solar Gel Refrescante",
+      "tamanio": "150ml",
+      "imagen": "../img/products/3skincare/sk1.png",
+      "precio": 11.74,
+      "descripcion": "Alivia e hidrata la piel después de la exposición al sol, brindando una sensación de frescura inmediata."
+    },
+    {
+      "id": "CR02",
+      "tipo": "cremas",
+      "marca": "Dermaglós",
+      "nombre": "Protector Solar Familiar Fps 50",
+      "tamanio": "380ml",
+      "imagen": "../img/products/3skincare/sk2.png",
+      "precio": 23.74,
+      "descripcion": "Protección solar de amplio espectro para toda la familia, ideal para uso diario."
+    },
+    {
+      "id": "CR03",
+      "tipo": "cremas",
+      "marca": "Dermaglós",
+      "nombre": "Protector Solar Fps 50 Spray",
+      "tamanio": "170ml",
+      "imagen": "../img/products/3skincare/sk3.png",
+      "precio": 20.257,
+      "descripcion": "Fácil aplicación en spray para una cobertura uniforme y efectiva contra los rayos UV."
+    },
+    {
+      "id": "CR04",
+      "tipo": "cremas",
+      "marca": "Dermaglós",
+      "nombre": "Protector Solar Fps 65 Crema",
+      "tamanio": "90g",
+      "imagen": "../img/products/3skincare/sk4.png",
+      "precio": 16.45,
+      "descripcion": "Protección alta contra rayos UV en formato crema, perfecta para piel sensible."
+    },
+    {
+      "id": "CR05",
+      "tipo": "cremas",
+      "marca": "Dermaglós",
+      "nombre": "Protector Solar Bebés Fps 65",
+      "tamanio": "120g",
+      "imagen": "../img/products/3skincare/sk5.png",
+      "precio": 14.829,
+      "descripcion": "Fórmula suave y segura diseñada especialmente para la delicada piel de los bebés."
+    },
+    {
+      "id": "CR06",
+      "tipo": "cremas",
+      "marca": "Dermaglós",
+      "nombre": "Protector Crema Compacta Color Fps 50",
+      "tamanio": "10g",
+      "imagen": "../img/products/3skincare/sk6.png",
+      "precio": 18.717,
+      "descripcion": "Proporciona protección solar y un toque de color para unificar el tono de la piel."
+    },
+    {
+      "id": "CR07",
+      "tipo": "cremas",
+      "marca": "Vichy",
+      "nombre": "Mineral 89 Probiotico",
+      "tamanio": "30ml",
+      "imagen": "../img/products/3skincare/sk7.png",
+      "precio": 77285,
+      "descripcion": "Concentrado fortificante y reparador para fortalecer la barrera cutánea."
+    },
+    {
+      "id": "CR08",
+      "tipo": "cremas",
+      "marca": "Vichy",
+      "nombre": "Mineral 89 Contorno de Ojos",
+      "tamanio": "15ml",
+      "imagen": "../img/products/3skincare/sk8.png",
+      "precio": 48110,
+      "descripcion": "Hidrata y revitaliza el área del contorno de ojos, reduciendo signos de fatiga."
+    },
+    {
+      "id": "CR09",
+      "tipo": "cremas",
+      "marca": "Vichy",
+      "nombre": "Liftactiv Supreme Piel Lifting Seca",
+      "tamanio": "50ml",
+      "imagen": "../img/products/3skincare/sk9.png",
+      "precio": 96580,
+      "descripcion": "Crema antiarrugas que mejora la firmeza y elasticidad de la piel seca."
+    },
+    {
+      "id": "CR10",
+      "tipo": "cremas",
+      "marca": "Vichy",
+      "nombre": "Liftactiv Supreme Noche Antiarrugas",
+      "tamanio": "50ml",
+      "imagen": "../img/products/3skincare/sk10.png",
+      "precio": 101425,
+      "descripcion": "Tratamiento nocturno intensivo que reduce arrugas y regenera la piel durante la noche."
+    },
+    {
+      "id": "CR11",
+      "tipo": "cremas",
+      "marca": "Vichy",
+      "nombre": "Purete Thermale Gel Fresco",
+      "tamanio": "200ml",
+      "imagen": "../img/products/3skincare/sk11.png",
+      "precio": 46375,
+      "descripcion": "Gel limpiador refrescante que elimina impurezas y restos de maquillaje."
+    },
+    {
+      "id": "CR12",
+      "tipo": "cremas",
+      "marca": "Vichy",
+      "nombre": "Purete Thermale Desmaquillante",
+      "tamanio": "200ml",
+      "imagen": "../img/products/3skincare/sk12.png",
+      "precio": 42000,
+      "descripcion": "Desmaquillante suave que limpia la piel y deja una sensación de frescura."
+    }
+  ],
+  "perfumes": [
+    {
+      "id": "PR01",
+      "tipo": "perfumes",
+      "marca": "Halloween",
+      "nombre": "Halloween Man EDT",
+      "tamanio": "125ml",
+      "imagen": "../img/products/4perfume/per1.png",
+      "precio": 116.3,
+      "descripcion": "Un perfume sofisticado con notas de lavanda, manzana, y especias para un hombre audaz."
+    },
+    {
+      "id": "PR02",
+      "tipo": "perfumes",
+      "marca": "Yves Saint Laurent",
+      "nombre": "YSL Y L'Elixir EDP",
+      "tamanio": "60ml",
+      "imagen": "../img/products/4perfume/per2.png",
+      "precio": 299,
+      "descripcion": "Una fragancia intensa y cautivadora con notas de manzana, jengibre, y lavanda."
+    },
+    {
+      "id": "PR03",
+      "tipo": "perfumes",
+      "marca": "Jean Paul Gaultier",
+      "nombre": "Scandal Absolu Pour Homme Parfum",
+      "tamanio": "100ml",
+      "imagen": "../img/products/4perfume/per3.png",
+      "precio": 230.2,
+      "descripcion": "Una fragancia masculina que combina miel, cuero, y pachulí para un aroma provocador."
+    },
+    {
+      "id": "PR04",
+      "tipo": "perfumes",
+      "marca": "Givenchy",
+      "nombre": "Gentleman Boisee Man EDP",
+      "tamanio": "60ml",
+      "imagen": "../img/products/4perfume/per4.png",
+      "precio": 27.799,
+      "descripcion": "Un perfume elegante con notas de madera, especias y un toque de iris que da sofisticación."
+    },
+    {
+      "id": "PR05",
+      "tipo": "perfumes",
+      "marca": "Giorgio Armani",
+      "nombre": "Armani Acqua Di Gio Profondo EDP",
+      "tamanio": "100ml",
+      "imagen": "../img/products/4perfume/per5.png",
+      "precio": 239,
+      "descripcion": "Refrescante y acuático, con notas marinas y cítricas, ideal para el hombre moderno."
+    },
+    {
+      "id": "PR06",
+      "tipo": "perfumes",
+      "marca": "Giorgio Armani",
+      "nombre": "212 Music Television Men EDT",
+      "tamanio": "100ml",
+      "imagen": "../img/products/4perfume/per6.png",
+      "precio": 174.5,
+      "descripcion": "Una fragancia fresca y vibrante con notas de cítricos y especias, perfecta para el hombre enérgico."
+    },
+    {
+      "id": "PR07",
+      "tipo": "perfumes",
+      "marca": "Halloween",
+      "nombre": "Halloween Fem EDT",
+      "tamanio": "200ml",
+      "imagen": "../img/products/4perfume/per7.png",
+      "precio": 190.52,
+      "descripcion": "Un perfume floral y afrutado con notas de naranja, jazmín y ámbar para una mujer seductora."
+    },
+    {
+      "id": "PR08",
+      "tipo": "perfumes",
+      "marca": "Yves Saint Laurent",
+      "nombre": "YSL Libre EDT",
+      "tamanio": "30ml",
+      "imagen": "../img/products/4perfume/per8.png",
+      "precio": 169,
+      "descripcion": "Una fragancia fresca y floral con lavanda, azahar y vainilla que irradia libertad y audacia."
+    },
+    {
+      "id": "PR09",
+      "tipo": "perfumes",
+      "marca": "Jean Paul Gaultier",
+      "nombre": "Divine Le Parfum",
+      "tamanio": "50ml",
+      "imagen": "../img/products/4perfume/per9.png",
+      "precio": 206.1,
+      "descripcion": "Un perfume sensual con notas florales de jazmín y madera, creando una fragancia única."
+    },
+    {
+      "id": "PR10",
+      "tipo": "perfumes",
+      "marca": "Givenchy",
+      "nombre": "Irresistible Rose Velvet Fem EDP",
+      "tamanio": "80ml",
+      "imagen": "../img/products/4perfume/per10.png",
+      "precio": 249.9,
+      "descripcion": "Una mezcla sofisticada de rosas y musgo que deja una sensación suave y aterciopelada."
+    },
+    {
+      "id": "PR11",
+      "tipo": "perfumes",
+      "marca": "Giorgio Armani",
+      "nombre": "Armani My Way Floral EDP",
+      "tamanio": "90ml",
+      "imagen": "../img/products/4perfume/per11.png",
+      "precio": 265,
+      "descripcion": "Una fragancia floral y fresca con un toque de cítricos y notas amaderadas, para una mujer moderna."
+    },
+    {
+      "id": "PR12",
+      "tipo": "perfumes",
+      "marca": "Carolina Herrera",
+      "nombre": "212 Heroes Forever Young Fem EDT",
+      "tamanio": "80ml",
+      "imagen": "../img/products/4perfume/per12.png",
+      "precio": 27800,
+      "descripcion": "Un perfume fresco y afrutado con notas de mandarina, pimienta rosa y musk, perfecto para el espíritu joven."
+    }
+  ],
+  "electronicos": [
+    {
+      "id": "EL01",
+      "tipo": "electronicos",
+      "marca": "Philco",
+      "nombre": "Oximetro De Pulso A340",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es1.png",
+      "precio": 44499,
+      "descripcion": "Un oxímetro de pulso digital para medir de forma precisa la saturación de oxígeno en sangre y la frecuencia cardíaca."
+    },
+    {
+      "id": "EL02",
+      "tipo": "electronicos",
+      "marca": "Philco",
+      "nombre": "Tensiómetro De Brazo 858A1",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es2.png",
+      "precio": 54999,
+      "descripcion": "Tensiómetro de brazo automático, con pantalla digital para la medición precisa de la presión arterial."
+    },
+    {
+      "id": "EL03",
+      "tipo": "electronicos",
+      "marca": "Philco",
+      "nombre": "Balanza Digital BA2010N",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es3.png",
+      "precio": 20799,
+      "descripcion": "Balanza digital de alta precisión con capacidad para medir el peso en diferentes unidades."
+    },
+    {
+      "id": "EL04",
+      "tipo": "electronicos",
+      "marca": "Philco",
+      "nombre": "Termometro Infrarrojo BK8005",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es4.png",
+      "precio": 17049,
+      "descripcion": "Termómetro infrarrojo digital para medición de temperatura sin contacto, ideal para la familia."
+    },
+    {
+      "id": "EL05",
+      "tipo": "electronicos",
+      "marca": "Philco",
+      "nombre": "Nebulizador A500lW02",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es5.png",
+      "precio": 85799,
+      "descripcion": "Nebulizador portátil para el tratamiento de enfermedades respiratorias como el asma y la bronquitis."
+    },
+    {
+      "id": "EL06",
+      "tipo": "electronicos",
+      "marca": "Philco",
+      "nombre": "Masajeador Espalda WELB125N",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es6.png",
+      "precio": 106249,
+      "descripcion": "Masajeador eléctrico para la espalda con diferentes niveles de intensidad para aliviar el dolor muscular."
+    },
+    {
+      "id": "EL07",
+      "tipo": "electronicos",
+      "marca": "Aspen",
+      "nombre": "Manta Térmica Intellisense MT-01",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es7.png",
+      "precio": 62388,
+      "descripcion": "Manta térmica con tecnología Intellisense, diseñada para relajar los músculos y mejorar la circulación."
+    },
+    {
+      "id": "EL08",
+      "tipo": "electronicos",
+      "marca": "Aspen",
+      "nombre": "Almohadilla Térmica Cervical MTC-01",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es8.png",
+      "precio": 72362,
+      "descripcion": "Almohadilla térmica para cuello y hombros, ideal para aliviar dolores musculares y tensiones."
+    },
+    {
+      "id": "EL09",
+      "tipo": "electronicos",
+      "marca": "Aspen",
+      "nombre": "Colchon Antiescaras",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es9.png",
+      "precio": 80959,
+      "descripcion": "Colchón antiescaras diseñado para prevenir y aliviar úlceras por presión en pacientes con movilidad reducida."
+    },
+    {
+      "id": "EL10",
+      "tipo": "electronicos",
+      "marca": "Aspen",
+      "nombre": "Humidificador Vaporizador 3Lts",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es10.png",
+      "precio": 67804,
+      "descripcion": "Humidificador y vaporizador de 3 litros, ideal para mantener un ambiente saludable y evitar la resequedad del aire."
+    },
+    {
+      "id": "EL11",
+      "tipo": "electronicos",
+      "marca": "Aspen",
+      "nombre": "Nebulizador Ultrasonico 320",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es11.png",
+      "precio": 88479,
+      "descripcion": "Nebulizador ultrasónico de alta eficiencia para el tratamiento de enfermedades respiratorias mediante aerosoles finos."
+    },
+    {
+      "id": "EL12",
+      "tipo": "electronicos",
+      "marca": "Aspen",
+      "nombre": "Aspirador Nasal AN-X1",
+      "tamanio": "",
+      "imagen": "../img/products/5electroSalud/es12.png",
+      "precio": 54825,
+      "descripcion": "Aspirador nasal portátil para bebés y adultos, fácil de usar para eliminar la congestión nasal."
+    }
+  ],
+  "users": [
+    {
+      "id": "f9ac",
+      "name": "Raul",
+      "lastName": "Politi",
+      "email": "raul@gmail.com",
+      "password": "123456",
+      "adress": "",
+      "phoneNumber": "",
+      "rol": "admin",
+      "dni": "",
+      "favs": [],
+      "carrito": [],
+      "compras": []
+    },
+    {
+      "id": "e147",
+      "name": "Esteban",
+      "lastName": "Wytrykusz",
+      "email": "esteban@gmail.com",
+      "password": "123456",
+      "adress": "",
+      "phoneNumber": "",
+      "rol": "admin",
+      "dni": "",
+      "favs": [],
+      "carrito": [],
+      "compras": []
+    },
+    {
+      "id": "a13e",
+      "name": "Nahuel",
+      "lastName": "Juarez",
+      "email": "nahuel@gmail.com",
+      "password": "123456",
+      "adress": "",
+      "phoneNumber": "3815435325",
+      "rol": "admin",
+      "dni": "43652561",
+      "favs": [
+        "SUP2",
+        "suplementos",
+        "SUP1",
+        "suplementos",
+        "SUP3",
+        "suplementos"
+      ],
+      "carrito": [
+        {
+          "productoId": "SUP1",
+          "tipo": "suplementos",
+          "cantidad": 2
+        },
+        {
+          "productoId": "SUP2",
+          "tipo": "suplementos",
+          "cantidad": 2
+        },
+        {
+          "productoId": "SUP1",
+          "tipo": "suplementos",
+          "cantidad": "2"
+        },
+        {
+          "productoId": "SUP5",
+          "tipo": "suplementos",
+          "cantidad": "3"
+        },
+        {
+          "productoId": "SUP3",
+          "tipo": "suplementos",
+          "cantidad": 3
+        }
+      ],
+      "compras": [
+        {
+          "name": "Nahuel",
+          "lastName": "Juarez",
+          "adress": "Congreso 851",
+          "dni": "43652561",
+          "products": [
+            {
+              "productoId": "SUP1",
+              "tipo": "suplementos",
+              "cantidad": 3
+            },
+            {
+              "productoId": "SUP2",
+              "tipo": "suplementos",
+              "cantidad": 8
+            },
+            {
+              "productoId": "SUP5",
+              "tipo": "suplementos",
+              "cantidad": 3
+            },
+            {
+              "productoId": "SUP4",
+              "tipo": "suplementos",
+              "cantidad": 3
+            }
+          ],
+          "card": 3244,
+          "total": 811149,
+          "process": "EN CAMINO"
+        }
+      ]
+    },
+    {
+      "id": "6c18",
+      "name": "Lucas",
+      "lastName": "Gerrero",
+      "email": "lucas@gmail.com",
+      "password": "123456",
+      "adress": "",
+      "phoneNumber": "",
+      "rol": "user",
+      "dni": "",
+      "favs": [],
+      "carrito": [],
+      "compras": []
+    },
+    {
+      "id": "612d",
+      "name": "Federico",
+      "lastName": "Herrera",
+      "email": "federico@gmail.com",
+      "password": "123456",
+      "adress": "",
+      "phoneNumber": "",
+      "rol": "user",
+      "dni": "",
+      "favs": [],
+      "carrito": [],
+      "compras": []
+    },
+    {
+      "id": "2f9f",
+      "name": "Emiliano",
+      "lastName": "Sumerinde",
+      "email": "emiliano@gmail.com",
+      "password": "123456",
+      "adress": "",
+      "phoneNumber": "",
+      "rol": "admin",
+      "dni": "",
+      "favs": [],
+      "carrito": [],
+      "compras": []
+    },
+    {
+      "id": "ce62",
+      "name": "Nahuel",
+      "lastName": "Juarez",
+      "email": "xdd@gmail.com",
+      "password": "123456",
+      "adress": "",
+      "phoneNumber": "",
+      "rol": "user",
+      "dni": "",
+      "favs": [],
+      "carrito": [],
+      "compras": []
+    }
+  ]
+}

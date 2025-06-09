@@ -1,0 +1,122 @@
+#contact-detalles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-detalles .detalles {
+width: 40%;
+
+}
+
+#contact-detalles .detalles span,
+#form-detalles form {
+    font-size: 12px;
+}
+
+#contact-detalles .detalles h2,
+#form-detalles form h2 {
+font-size: 26px;
+line-height: 35px;
+padding: 20px 0;
+}
+
+#contact-detalles .detalles h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-detalles .detalles li {
+list-style: none;
+display: flex;
+padding: 10px; 
+align-items: center;      
+}
+
+#contact-detalles .detalles li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-detalles .detalles li i p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-detalles .map {
+width: 55%;
+height: 400px;
+}
+
+#contact-detalles .map iframe {
+    width: 100%;
+    height: 100%;
+    }
+
+#form-detalles {
+    display:flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;border: 1px solid #e1e1e1;
+}
+    
+#form-detalles form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-detalles form input,
+#form-detalles form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    margin-bottom: 1px solid #e1e1e1;
+}
+
+#form-detalles form button {
+    background-color: #088178;
+    color: #fff;
+}
+
+#form-detalles .people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-detalles .people div img {
+    border-radius: 15px;
+    width: 65px;
+    height: 65px ;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#form-detalles .people div p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#form-detalles .people div p span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

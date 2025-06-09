@@ -1,0 +1,49 @@
+aside{
+    background-color: #FEFEFF;
+    border-radius: 0 10px 10px 0;
+}
+.title-dashboard{
+    border-bottom: 2px solid black;
+}
+.btn-add-admin{
+    height: 35px;
+    background-color: #088178;
+    color: whitesmoke;
+}
+.btn-add-admin:hover{
+    height: 35px;
+    background-color: #088178;
+    color: whitesmoke;
+}
+.accounts-container{
+    background-color: #fff;
+    color: rgba(0, 0, 0, .87);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+}
+.accounts-header{
+    border-bottom: 1px solid gray;
+    background-color: #F8F9FD;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: transparent;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+
+}
+.form__group__account {
+    width: 100%;
+}
+#admin-btn-users{
+    background-color: #C7C7C7;
+}
+.img-list-products{
+    height: 80px;
+}

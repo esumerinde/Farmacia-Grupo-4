@@ -1,0 +1,12 @@
+body{
+    height: 100vh;
+}
+img{
+    width: 1000px;
+}
+.btn-volver{
+    background-color: #088178;
+}
+.btn-volver:hover{
+    background-color: #088178;
+}

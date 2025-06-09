@@ -1,0 +1,26 @@
+#page-header.Nos-header {
+     background-image: url(../img/about/b1.png);
+}
+
+#nos-head {
+    display: flex;
+    align-items: center;
+}
+
+#nos-head img {
+    width: 50%;
+    height: auto;
+}
+
+#nos-head div {
+    padding-left: 40px;
+    
+}
+
+
+
+
+
+
+
+

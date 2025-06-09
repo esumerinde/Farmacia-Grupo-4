@@ -1,0 +1,131 @@
+.account-aside {
+    background-color: #FEFEFF;
+    height: 500px;
+    width: 20%;
+}
+
+.account-section {
+    background-color: #FEFEFF;
+    width: 60%;
+}
+
+.title-account-section {
+    border-bottom: 1px solid gray;
+}
+
+.account-box-style {
+    background-color: #fff;
+    color: rgba(0, 0, 0, .87);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.account-box-info {
+    height: 100%;
+}
+
+.account-box-first {
+    padding: 10px 0 10px 0px;
+}
+
+.account-box-second {
+    padding: 10px 0 10px 10px;
+}
+
+.form__group {
+    margin: 0;
+    padding: 10px 0 0;
+    width: 100%;
+}
+
+.form__group__account {
+    position: relative;
+    padding: 10px 0 0;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.form__label__account {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 0.8rem;
+    color: #110505;
+}
+
+.btn-myaccount:hover {
+    background-color: #E0E0E0 !important;
+}
+
+.btn-account-success {
+    background-color: #088178;
+    color: whitesmoke;
+    font-size: 15px;
+    width: 180px;
+    height: 50px;
+}
+.btn-account-success:hover{
+    background-color: #088178;
+    color: whitesmoke;
+}
+#account-btn-myaccount{
+    background-color: #C7C7C7;
+}
+#myshops-div, #myfavs-div{
+    display: none;
+}
+.btn-go-shop{
+    background-color: #535353;
+    border: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Products-container{
+    display: none;
+}
+#favs-container-empty{
+display: none !important;
+}
+#tickets-empty{
+    display: none !important;
+}
+.img-ticket{
+    width: 150px;
+}
+.tickets-card{
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+}
+.delivery-div{
+    border-left: 1px solid gray;
+    width: 20%;
+}
+.ticket-info{
+    max-width: 28%;
+}
+.delivery-status{
+    color: lightblue;
+}
+.img-product-list{
+    width: 20px;
+}
+.tickets-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100vh;
+  }
+  
+  .img-ticket {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 5px 0;
+} 

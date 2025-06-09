@@ -1,0 +1,190 @@
+
+/*offcanvas Login*/
+.custom-offcanvas {
+    width: 600px !important;
+    max-width: 600px !important;
+}
+.offcanvas-header{
+    border-bottom: 1px solid black;
+}
+.google-login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4285F4; /* Color de Google */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Elimina el subrayado */
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.google-login-button:hover {
+    background-color: #357AE8; /* Color al pasar el ratón */
+}
+
+.g-sign-in-button {
+    margin: 15px;
+    display: inline-block;
+    width: 245px;
+    height: 50px;
+    background-color: #4285f4;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    transition: background-color .218s, border-color .218s, box-shadow .218s;
+  }
+  
+  .g-sign-in-button:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3);
+    box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3);
+  }
+  
+  .g-sign-in-button:active {
+    background-color: #3367D6;
+    transition: background-color .2s;
+  }
+  
+  .g-sign-in-button .content-wrapper {
+    height: 100%;
+    width: 100%;
+    border: 1px solid transparent;
+  }
+  
+  .g-sign-in-button img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: -5px;
+    top: -5px;
+  }
+  
+  .g-sign-in-button .logo-wrapper {
+    padding: 15px;
+    background: #fff;
+    width: 48px;
+    height: 100%;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  
+  .g-sign-in-button .text-container {
+    font-family: "Roboto", arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: .21px;
+    font-size: 14px;
+    line-height: 48px;
+    vertical-align: top;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+  }
+
+  .btn-new-account {
+    width: 240px;
+    height: 50px;
+  }
+
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 95%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: gray;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #110505;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #088178, #38ef7d);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #088178;
+    font-weight: 700;
+  }
+  
+
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  
+  #btn-back {
+    display: none;
+    padding: 2px;
+    background-color: white;
+    border: none;
+  }
+  #forgotPass-offcanvas, #register-offcanvas{
+    display: none;
+  }
+
+  .form-register{
+    width: 45%;
+  }
+
+  #error-text-id, #error-text-id-register{
+    color: #f54a18;
+    display: none;
+  }
+
+  #button-login{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    border: 0px solid;
+    background-color:  #FFEAEA;
+    
+  }
+  #button-login:hover {
+    color: #088178;
+}
+#button-login:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
